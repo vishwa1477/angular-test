@@ -1,0 +1,34 @@
+<div>
+  <div class="header">
+    <span>course and student maintenance</span>
+  </div>
+  <div *ngIf="statusCourse" style="color: chartreuse;">
+    <h1>Course Added Successfully</h1>
+  </div>
+  <div *ngIf="statusStud" style="color: chartreuse;">
+    <h1>Student Added Successfully</h1>
+  </div>
+
+</div>
+<div class="container">
+  <div class="inner-container">
+    <h1>course</h1>
+    <div class="options">
+      <select class="selector">
+        <option *ngFor="let b of books" value="Technology">{{b.booktitle}}</option>
+      </select>
+      <input class="selector" type="text" [(ngModel)]="btitle">
+      <button (click)="AddBook()">Add New Course</button>
+    </div>
+  </div>
+  <div class="inner-container">
+    <h1>Students</h1>
+    <div class="options">
+      <select class="selector">
+        <option *ngFor="let b of stud" value="Student">{{b.studtitle}}</option>
+      </select>
+      <input class="selector" type="text" [(ngModel)]="ntitle">
+      <button (click)="AddStud()">Add New Course</button>
+    </div>
+  </div>
+</div>

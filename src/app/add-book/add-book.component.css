@@ -1,0 +1,41 @@
+.header{
+    width: "100%";
+    padding: 20px 10px;
+    background-color: tomato;
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+}
+.container{
+    width: auto;
+    display: flex;
+    flex-flow: column;
+}
+.inner-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 10%;
+}
+.options{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+button{
+    padding: 5px 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    outline: none;
+}
+.selector{
+    background-color: turquoise;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border:none;
+    margin: 5px
+}
